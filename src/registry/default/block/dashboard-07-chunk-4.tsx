@@ -19,7 +19,7 @@ export default function Component() {
                         alt='Product image'
                         className='aspect-square w-full rounded-md object-cover'
                         height='300'
-                        src='https://ui.shadcn.com/placeholder.svg'
+                        src='/placeholder.svg'
                         width='300'
                     />
                     <div className='grid grid-cols-3 gap-2'>
@@ -28,7 +28,7 @@ export default function Component() {
                                 alt='Product image'
                                 className='aspect-square w-full rounded-md object-cover'
                                 height='84'
-                                src='https://ui.shadcn.com/placeholder.svg'
+                                src='/placeholder.svg'
                                 width='84'
                             />
                         </button>
@@ -37,12 +37,12 @@ export default function Component() {
                                 alt='Product image'
                                 className='aspect-square w-full rounded-md object-cover'
                                 height='84'
-                                src='https://ui.shadcn.com/placeholder.svg'
+                                src='/placeholder.svg'
                                 width='84'
                             />
                         </button>
                         <button className='flex aspect-square w-full items-center justify-center rounded-md border border-dashed'>
-                            <Upload className='text-muted-foreground size-4' />
+                            <Upload className='size-4 text-muted-foreground' />
                             <span className='sr-only'>Upload</span>
                         </button>
                     </div>

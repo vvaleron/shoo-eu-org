@@ -1,12 +1,11 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 
-import { PlusCircledIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import { ScrollArea, ScrollBar } from '@/registry/new-york/ui/scroll-area';
 import { Separator } from '@/registry/new-york/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/registry/new-york/ui/tabs';
+import { PlusCircledIcon } from '@radix-ui/react-icons';
 
 import { AlbumArtwork } from './components/album-artwork';
 import { Menu } from './components/menu';
@@ -71,7 +70,7 @@ export default function MusicPage() {
                                                     <h2 className='text-2xl font-semibold tracking-tight'>
                                                         Listen Now
                                                     </h2>
-                                                    <p className='text-muted-foreground text-sm'>
+                                                    <p className='text-sm text-muted-foreground'>
                                                         Top picks for you. Updated daily.
                                                     </p>
                                                 </div>
@@ -96,7 +95,7 @@ export default function MusicPage() {
                                             </div>
                                             <div className='mt-6 space-y-1'>
                                                 <h2 className='text-2xl font-semibold tracking-tight'>Made for You</h2>
-                                                <p className='text-muted-foreground text-sm'>
+                                                <p className='text-sm text-muted-foreground'>
                                                     Your personal playlists. Updated daily.
                                                 </p>
                                             </div>
@@ -127,7 +126,7 @@ export default function MusicPage() {
                                                     <h2 className='text-2xl font-semibold tracking-tight'>
                                                         New Episodes
                                                     </h2>
-                                                    <p className='text-muted-foreground text-sm'>
+                                                    <p className='text-sm text-muted-foreground'>
                                                         Your favorite podcasts. Updated daily.
                                                     </p>
                                                 </div>

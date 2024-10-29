@@ -52,12 +52,12 @@ export const containerClassName = 'w-full h-full';
 
 export default function Dashboard() {
     return (
-        <div className='bg-muted/40 flex min-h-screen w-full flex-col'>
-            <aside className='bg-background fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r sm:flex'>
+        <div className='flex min-h-screen w-full flex-col bg-muted/40'>
+            <aside className='fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex'>
                 <nav className='flex flex-col items-center gap-4 px-2 sm:py-5'>
                     <Link
                         href='#'
-                        className='bg-primary text-primary-foreground group flex size-9 shrink-0 items-center justify-center gap-2 rounded-full text-lg font-semibold md:size-8 md:text-base'>
+                        className='group flex size-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:size-8 md:text-base'>
                         <Package2 className='size-4 transition-all group-hover:scale-110' />
                         <span className='sr-only'>Acme Inc</span>
                     </Link>
@@ -65,7 +65,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Home className='size-5' />
                                 <span className='sr-only'>Dashboard</span>
                             </Link>
@@ -76,7 +76,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='bg-accent text-accent-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:size-8'>
                                 <ShoppingCart className='size-5' />
                                 <span className='sr-only'>Orders</span>
                             </Link>
@@ -87,7 +87,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Package className='size-5' />
                                 <span className='sr-only'>Products</span>
                             </Link>
@@ -98,7 +98,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Users2 className='size-5' />
                                 <span className='sr-only'>Customers</span>
                             </Link>
@@ -109,7 +109,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <LineChart className='size-5' />
                                 <span className='sr-only'>Analytics</span>
                             </Link>
@@ -122,7 +122,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Settings className='size-5' />
                                 <span className='sr-only'>Settings</span>
                             </Link>
@@ -132,7 +132,7 @@ export default function Dashboard() {
                 </nav>
             </aside>
             <div className='flex flex-col sm:gap-4 sm:py-4 sm:pl-14'>
-                <header className='bg-background sticky top-0 z-30 flex h-14 items-center gap-4 border-b px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6'>
+                <header className='sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6'>
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button size='icon' variant='outline' className='sm:hidden'>
@@ -144,35 +144,35 @@ export default function Dashboard() {
                             <nav className='grid gap-6 text-lg font-medium'>
                                 <Link
                                     href='#'
-                                    className='bg-primary text-primary-foreground group flex size-10 shrink-0 items-center justify-center gap-2 rounded-full text-lg font-semibold md:text-base'>
+                                    className='group flex size-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base'>
                                     <Package2 className='size-5 transition-all group-hover:scale-110' />
                                     <span className='sr-only'>Acme Inc</span>
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <Home className='size-5' />
                                     Dashboard
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <ShoppingCart className='size-5' />
                                     Orders
                                 </Link>
-                                <Link href='#' className='text-foreground flex items-center gap-4 px-2.5'>
+                                <Link href='#' className='flex items-center gap-4 px-2.5 text-foreground'>
                                     <Package className='size-5' />
                                     Products
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <Users2 className='size-5' />
                                     Customers
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <LineChart className='size-5' />
                                     Settings
                                 </Link>
@@ -199,18 +199,18 @@ export default function Dashboard() {
                         </BreadcrumbList>
                     </Breadcrumb>
                     <div className='relative ml-auto flex-1 md:grow-0'>
-                        <Search className='text-muted-foreground absolute left-2.5 top-2.5 size-4' />
+                        <Search className='absolute left-2.5 top-2.5 size-4 text-muted-foreground' />
                         <Input
                             type='search'
                             placeholder='Search...'
-                            className='bg-background w-full rounded-lg pl-8 md:w-[200px] lg:w-[336px]'
+                            className='w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[336px]'
                         />
                     </div>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button variant='outline' size='icon' className='overflow-hidden rounded-full'>
                                 <Image
-                                    src='https://ui.shadcn.com/placeholder-user.jpg'
+                                    src='/placeholder-user.jpg'
                                     width={36}
                                     height={36}
                                     alt='Avatar'
@@ -297,7 +297,7 @@ export default function Dashboard() {
                                                         alt='Product image'
                                                         className='aspect-square rounded-md object-cover'
                                                         height='64'
-                                                        src='https://ui.shadcn.com/placeholder.svg'
+                                                        src='/placeholder.svg'
                                                         width='64'
                                                     />
                                                 </TableCell>
@@ -332,7 +332,7 @@ export default function Dashboard() {
                                                         alt='Product image'
                                                         className='aspect-square rounded-md object-cover'
                                                         height='64'
-                                                        src='https://ui.shadcn.com/placeholder.svg'
+                                                        src='/placeholder.svg'
                                                         width='64'
                                                     />
                                                 </TableCell>
@@ -367,7 +367,7 @@ export default function Dashboard() {
                                                         alt='Product image'
                                                         className='aspect-square rounded-md object-cover'
                                                         height='64'
-                                                        src='https://ui.shadcn.com/placeholder.svg'
+                                                        src='/placeholder.svg'
                                                         width='64'
                                                     />
                                                 </TableCell>
@@ -402,7 +402,7 @@ export default function Dashboard() {
                                                         alt='Product image'
                                                         className='aspect-square rounded-md object-cover'
                                                         height='64'
-                                                        src='https://ui.shadcn.com/placeholder.svg'
+                                                        src='/placeholder.svg'
                                                         width='64'
                                                     />
                                                 </TableCell>
@@ -437,7 +437,7 @@ export default function Dashboard() {
                                                         alt='Product image'
                                                         className='aspect-square rounded-md object-cover'
                                                         height='64'
-                                                        src='https://ui.shadcn.com/placeholder.svg'
+                                                        src='/placeholder.svg'
                                                         width='64'
                                                     />
                                                 </TableCell>
@@ -472,7 +472,7 @@ export default function Dashboard() {
                                                         alt='Product image'
                                                         className='aspect-square rounded-md object-cover'
                                                         height='64'
-                                                        src='https://ui.shadcn.com/placeholder.svg'
+                                                        src='/placeholder.svg'
                                                         width='64'
                                                     />
                                                 </TableCell>
@@ -505,7 +505,7 @@ export default function Dashboard() {
                                     </Table>
                                 </CardContent>
                                 <CardFooter>
-                                    <div className='text-muted-foreground text-xs'>
+                                    <div className='text-xs text-muted-foreground'>
                                         Showing <strong>1-10</strong> of <strong>32</strong> products
                                     </div>
                                 </CardFooter>

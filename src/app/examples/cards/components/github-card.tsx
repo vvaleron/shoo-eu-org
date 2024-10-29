@@ -1,5 +1,3 @@
-import { ChevronDownIcon, CircleIcon, PlusIcon, StarIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york/ui/card';
 import {
@@ -12,6 +10,7 @@ import {
     DropdownMenuTrigger
 } from '@/registry/new-york/ui/dropdown-menu';
 import { Separator } from '@/registry/new-york/ui/separator';
+import { ChevronDownIcon, CircleIcon, PlusIcon, StarIcon } from '@radix-ui/react-icons';
 
 export function DemoGithub() {
     return (

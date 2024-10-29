@@ -1,7 +1,5 @@
 'use client';
 
-import { CalendarIcon, CaretSortIcon, CheckIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import { toast } from '@/registry/new-york/hooks/use-toast';
 import { Button } from '@/registry/new-york/ui/button';
@@ -26,6 +24,7 @@ import {
 import { Input } from '@/registry/new-york/ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { CalendarIcon, CaretSortIcon, CheckIcon } from '@radix-ui/react-icons';
 
 import { format } from 'date-fns';
 import { useForm } from 'react-hook-form';
@@ -130,7 +129,6 @@ export function AccountForm() {
                                         selected={field.value}
                                         onSelect={field.onChange}
                                         disabled={(date) => date > new Date() || date < new Date('1900-01-01')}
-                                        initialFocus
                                     />
                                 </PopoverContent>
                             </Popover>

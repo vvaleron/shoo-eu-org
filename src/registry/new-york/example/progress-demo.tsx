@@ -13,5 +13,5 @@ export default function ProgressDemo() {
 return () => clearTimeout(timer);
     }, []);
 
-    return <Progress value={progress} className='w-3/5' />;
+    return <Progress value={progress} className='w-[60%]' />;
 }

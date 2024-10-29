@@ -1,6 +1,5 @@
-import { FontBoldIcon, FontItalicIcon, UnderlineIcon } from '@radix-ui/react-icons';
-
 import { ToggleGroup, ToggleGroupItem } from '@/registry/new-york/ui/toggle-group';
+import { FontBoldIcon, FontItalicIcon, UnderlineIcon } from '@radix-ui/react-icons';
 
 export default function ToggleGroupDemo() {
     return (

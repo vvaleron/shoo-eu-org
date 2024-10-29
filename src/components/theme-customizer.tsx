@@ -4,8 +4,6 @@ import * as React from 'react';
 
 import { useTheme } from 'next-themes';
 
-import { CheckIcon, CopyIcon, InfoCircledIcon, MoonIcon, ResetIcon, SunIcon } from '@radix-ui/react-icons';
-
 import { copyToClipboardWithMeta } from '@/components/copy-button';
 import { ThemeWrapper } from '@/components/theme-wrapper';
 import { useConfig } from '@/hooks/use-config';
@@ -26,6 +24,7 @@ import { Skeleton } from '@/registry/new-york/ui/skeleton';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/registry/new-york/ui/tooltip';
 import { BaseColor, baseColors } from '@/registry/registry-base-colors';
 import '@/styles/mdx.css';
+import { CheckIcon, CopyIcon, InfoCircledIcon, MoonIcon, ResetIcon, SunIcon } from '@radix-ui/react-icons';
 
 import template from 'lodash.template';
 

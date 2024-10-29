@@ -1,9 +1,8 @@
-import { BellIcon, CheckIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import { Button } from '@/registry/new-york/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york/ui/card';
 import { Switch } from '@/registry/new-york/ui/switch';
+import { BellIcon, CheckIcon } from '@radix-ui/react-icons';
 
 const notifications = [
     {

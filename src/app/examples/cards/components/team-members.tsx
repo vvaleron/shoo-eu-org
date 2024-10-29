@@ -1,5 +1,3 @@
-import { ChevronDownIcon } from '@radix-ui/react-icons';
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york/ui/avatar';
 import { Button } from '@/registry/new-york/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york/ui/card';
@@ -12,6 +10,7 @@ import {
     CommandList
 } from '@/registry/new-york/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 export function DemoTeamMembers() {
     return (

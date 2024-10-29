@@ -4,12 +4,11 @@ import * as React from 'react';
 
 import { useTheme } from 'next-themes';
 
-import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
-
 import { useConfig } from '@/hooks/use-config';
 import { Button } from '@/registry/new-york/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/registry/new-york/ui/card';
 import { baseColors } from '@/registry/registry-base-colors';
+import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
 
 import { Bar, BarChart, ResponsiveContainer } from 'recharts';
 

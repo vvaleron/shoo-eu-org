@@ -1,5 +1,3 @@
-import { CalendarIcon, EnvelopeClosedIcon, FaceIcon, GearIcon, PersonIcon, RocketIcon } from '@radix-ui/react-icons';
-
 import {
     Command,
     CommandEmpty,
@@ -10,6 +8,7 @@ import {
     CommandSeparator,
     CommandShortcut
 } from '@/registry/new-york/ui/command';
+import { CalendarIcon, EnvelopeClosedIcon, FaceIcon, GearIcon, PersonIcon, RocketIcon } from '@radix-ui/react-icons';
 
 export default function CommandDemo() {
     return (

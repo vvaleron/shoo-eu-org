@@ -2,8 +2,6 @@
 
 import * as React from 'react';
 
-import { CaretSortIcon, ChevronDownIcon, DotsHorizontalIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york/ui/card';
 import { Checkbox } from '@/registry/new-york/ui/checkbox';
@@ -18,6 +16,7 @@ import {
 } from '@/registry/new-york/ui/dropdown-menu';
 import { Input } from '@/registry/new-york/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/registry/new-york/ui/table';
+import { CaretSortIcon, ChevronDownIcon, DotsHorizontalIcon } from '@radix-ui/react-icons';
 import {
     ColumnDef,
     ColumnFiltersState,

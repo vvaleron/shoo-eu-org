@@ -1,6 +1,5 @@
-import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
-
 import { Alert, AlertDescription, AlertTitle } from '@/registry/new-york/ui/alert';
+import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
 
 export default function AlertDestructive() {
     return (

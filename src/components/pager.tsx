@@ -1,10 +1,9 @@
 import Link from 'next/link';
 
-import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
-
 import { docsConfig } from '@/config/docs';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/registry/new-york/ui/button';
+import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 
 import { Doc } from 'contentlayer/generated';
 import { NavItem, NavItemWithChildren } from 'types/nav';
@@ -44,8 +43,8 @@ export function getPagerForDoc(doc: Doc) {
     const activeIndex = flattenedLinks.findIndex((link) => doc.slug === link?.href);
     const prev = activeIndex !== 0 ? flattenedLinks[activeIndex - 1] : null;
     const next = activeIndex !== flattenedLinks.length - 1 ? flattenedLinks[activeIndex + 1] : null;
-    
-return {
+
+    return {
         prev,
         next
     };

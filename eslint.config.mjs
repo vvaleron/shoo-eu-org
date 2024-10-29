@@ -55,7 +55,9 @@ export default [
             'react/no-unescaped-entities': 'off',
             'react/no-unknown-property': 'off',
             'tailwindcss/no-unnecessary-arbitrary-value': 'off',
-            'import/named': 'off'
+            'tailwindcss/classnames-order': 'off',
+            'import/named': 'off',
+            'import/no-named-as-default-member': 'off'
         }
     },
     // ! ===================== DISCLAIMER =====================

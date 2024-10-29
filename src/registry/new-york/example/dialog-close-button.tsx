@@ -1,5 +1,3 @@
-import { CopyIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import {
     Dialog,
@@ -13,6 +11,7 @@ import {
 } from '@/registry/new-york/ui/dialog';
 import { Input } from '@/registry/new-york/ui/input';
 import { Label } from '@/registry/new-york/ui/label';
+import { CopyIcon } from '@radix-ui/react-icons';
 
 export default function DialogCloseButton() {
     return (

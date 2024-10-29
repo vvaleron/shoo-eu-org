@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import { CheckIcon, PaperPlaneIcon, PlusIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york/ui/avatar';
 import { Button } from '@/registry/new-york/ui/button';
@@ -24,6 +22,7 @@ import {
 } from '@/registry/new-york/ui/dialog';
 import { Input } from '@/registry/new-york/ui/input';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/registry/new-york/ui/tooltip';
+import { CheckIcon, PaperPlaneIcon, PlusIcon } from '@radix-ui/react-icons';
 
 const users = [
     {

@@ -45,7 +45,7 @@ export default function Component() {
                                     alt='Product image'
                                     className='aspect-square rounded-md object-cover'
                                     height='64'
-                                    src='https://ui.shadcn.com/placeholder.svg'
+                                    src='/placeholder.svg'
                                     width='64'
                                 />
                             </TableCell>
@@ -78,7 +78,7 @@ export default function Component() {
                                     alt='Product image'
                                     className='aspect-square rounded-md object-cover'
                                     height='64'
-                                    src='https://ui.shadcn.com/placeholder.svg'
+                                    src='/placeholder.svg'
                                     width='64'
                                 />
                             </TableCell>
@@ -111,7 +111,7 @@ export default function Component() {
                                     alt='Product image'
                                     className='aspect-square rounded-md object-cover'
                                     height='64'
-                                    src='https://ui.shadcn.com/placeholder.svg'
+                                    src='/placeholder.svg'
                                     width='64'
                                 />
                             </TableCell>
@@ -144,7 +144,7 @@ export default function Component() {
                                     alt='Product image'
                                     className='aspect-square rounded-md object-cover'
                                     height='64'
-                                    src='https://ui.shadcn.com/placeholder.svg'
+                                    src='/placeholder.svg'
                                     width='64'
                                 />
                             </TableCell>
@@ -177,7 +177,7 @@ export default function Component() {
                                     alt='Product image'
                                     className='aspect-square rounded-md object-cover'
                                     height='64'
-                                    src='https://ui.shadcn.com/placeholder.svg'
+                                    src='/placeholder.svg'
                                     width='64'
                                 />
                             </TableCell>
@@ -210,7 +210,7 @@ export default function Component() {
                                     alt='Product image'
                                     className='aspect-square rounded-md object-cover'
                                     height='64'
-                                    src='https://ui.shadcn.com/placeholder.svg'
+                                    src='/placeholder.svg'
                                     width='64'
                                 />
                             </TableCell>
@@ -241,7 +241,7 @@ export default function Component() {
                 </Table>
             </CardContent>
             <CardFooter>
-                <div className='text-muted-foreground text-xs'>
+                <div className='text-xs text-muted-foreground'>
                     Showing <strong>1-10</strong> of <strong>32</strong> products
                 </div>
             </CardFooter>

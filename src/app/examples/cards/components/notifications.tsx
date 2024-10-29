@@ -1,6 +1,5 @@
-import { BellIcon, EyeNoneIcon, PersonIcon } from '@radix-ui/react-icons';
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/new-york/ui/card';
+import { BellIcon, EyeNoneIcon, PersonIcon } from '@radix-ui/react-icons';
 
 export function DemoNotifications() {
     return (

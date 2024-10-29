@@ -7,7 +7,7 @@ import { Badge } from '@/registry/new-york/ui/badge';
 import { ScrollArea } from '@/registry/new-york/ui/scroll-area';
 import { Separator } from '@/registry/new-york/ui/separator';
 
-import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+import { formatDistanceToNow } from 'date-fns';
 
 interface MailListProps {
     items: Mail[];

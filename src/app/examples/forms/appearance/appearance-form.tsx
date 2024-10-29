@@ -1,7 +1,5 @@
 'use client';
 
-import { ChevronDownIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import { toast } from '@/registry/new-york/hooks/use-toast';
 import { Button, buttonVariants } from '@/registry/new-york/ui/button';
@@ -16,6 +14,7 @@ import {
 } from '@/registry/new-york/ui/form';
 import { RadioGroup, RadioGroupItem } from '@/registry/new-york/ui/radio-group';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';

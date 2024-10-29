@@ -1,14 +1,13 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 
-import { CounterClockwiseClockIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/registry/new-york/ui/hover-card';
 import { Label } from '@/registry/new-york/ui/label';
 import { Separator } from '@/registry/new-york/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/registry/new-york/ui/tabs';
 import { Textarea } from '@/registry/new-york/ui/textarea';
+import { CounterClockwiseClockIcon } from '@radix-ui/react-icons';
 
 import { CodeViewer } from './components/code-viewer';
 import { MaxLengthSelector } from './components/maxlength-selector';
@@ -248,7 +247,7 @@ export default function PlaygroundPage() {
                                                 placeholder="We're writing to [inset]. Congrats from OpenAI!"
                                                 className='h-full min-h-[300px] lg:min-h-[700px] xl:min-h-[700px]'
                                             />
-                                            <div className='bg-muted rounded-md border'></div>
+                                            <div className='rounded-md border bg-muted'></div>
                                         </div>
                                         <div className='flex items-center space-x-2'>
                                             <Button>Submit</Button>
@@ -276,7 +275,7 @@ export default function PlaygroundPage() {
                                                     <Textarea id='instructions' placeholder='Fix the grammar.' />
                                                 </div>
                                             </div>
-                                            <div className='bg-muted mt-[21px] min-h-[400px] rounded-md border lg:min-h-[700px]' />
+                                            <div className='mt-[21px] min-h-[400px] rounded-md border bg-muted lg:min-h-[700px]' />
                                         </div>
                                         <div className='flex items-center space-x-2'>
                                             <Button>Submit</Button>

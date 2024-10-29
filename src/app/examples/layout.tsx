@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
-import { Announcement } from '@/components/announcement';
 import { ExamplesNav } from '@/components/examples-nav';
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from '@/components/page-header';
 import { Button, buttonVariants } from '@/registry/new-york/ui/button';
@@ -43,7 +42,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
             </PageHeader>
             <section>
                 <ExamplesNav />
-                <div className='bg-background overflow-hidden rounded-[0.5rem] border shadow'>{children}</div>
+                <div className='overflow-hidden rounded-[0.5rem] border bg-background shadow'>{children}</div>
             </section>
         </div>
     );

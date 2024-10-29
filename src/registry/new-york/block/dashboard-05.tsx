@@ -61,12 +61,12 @@ export const containerClassName = 'w-full h-full';
 
 export default function Dashboard() {
     return (
-        <div className='bg-muted/40 flex min-h-screen w-full flex-col'>
-            <aside className='bg-background fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r sm:flex'>
+        <div className='flex min-h-screen w-full flex-col bg-muted/40'>
+            <aside className='fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex'>
                 <nav className='flex flex-col items-center gap-4 px-2 sm:py-4'>
                     <Link
                         href='#'
-                        className='bg-primary text-primary-foreground group flex size-9 shrink-0 items-center justify-center gap-2 rounded-full text-lg font-semibold md:size-8 md:text-base'>
+                        className='group flex size-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:size-8 md:text-base'>
                         <Package2 className='size-4 transition-all group-hover:scale-110' />
                         <span className='sr-only'>Acme Inc</span>
                     </Link>
@@ -74,7 +74,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Home className='size-5' />
                                 <span className='sr-only'>Dashboard</span>
                             </Link>
@@ -85,7 +85,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='bg-accent text-accent-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:size-8'>
                                 <ShoppingCart className='size-5' />
                                 <span className='sr-only'>Orders</span>
                             </Link>
@@ -96,7 +96,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Package className='size-5' />
                                 <span className='sr-only'>Products</span>
                             </Link>
@@ -107,7 +107,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Users2 className='size-5' />
                                 <span className='sr-only'>Customers</span>
                             </Link>
@@ -118,7 +118,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <LineChart className='size-5' />
                                 <span className='sr-only'>Analytics</span>
                             </Link>
@@ -131,7 +131,7 @@ export default function Dashboard() {
                         <TooltipTrigger asChild>
                             <Link
                                 href='#'
-                                className='text-muted-foreground hover:text-foreground flex size-9 items-center justify-center rounded-lg transition-colors md:size-8'>
+                                className='flex size-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:size-8'>
                                 <Settings className='size-5' />
                                 <span className='sr-only'>Settings</span>
                             </Link>
@@ -141,7 +141,7 @@ export default function Dashboard() {
                 </nav>
             </aside>
             <div className='flex flex-col sm:gap-4 sm:py-4 sm:pl-14'>
-                <header className='bg-background sticky top-0 z-30 flex h-14 items-center gap-4 border-b px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6'>
+                <header className='sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6'>
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button size='icon' variant='outline' className='sm:hidden'>
@@ -153,35 +153,35 @@ export default function Dashboard() {
                             <nav className='grid gap-6 text-lg font-medium'>
                                 <Link
                                     href='#'
-                                    className='bg-primary text-primary-foreground group flex size-10 shrink-0 items-center justify-center gap-2 rounded-full text-lg font-semibold md:text-base'>
+                                    className='group flex size-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base'>
                                     <Package2 className='size-5 transition-all group-hover:scale-110' />
                                     <span className='sr-only'>Acme Inc</span>
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <Home className='size-5' />
                                     Dashboard
                                 </Link>
-                                <Link href='#' className='text-foreground flex items-center gap-4 px-2.5'>
+                                <Link href='#' className='flex items-center gap-4 px-2.5 text-foreground'>
                                     <ShoppingCart className='size-5' />
                                     Orders
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <Package className='size-5' />
                                     Products
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <Users2 className='size-5' />
                                     Customers
                                 </Link>
                                 <Link
                                     href='#'
-                                    className='text-muted-foreground hover:text-foreground flex items-center gap-4 px-2.5'>
+                                    className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'>
                                     <LineChart className='size-5' />
                                     Settings
                                 </Link>
@@ -208,18 +208,18 @@ export default function Dashboard() {
                         </BreadcrumbList>
                     </Breadcrumb>
                     <div className='relative ml-auto flex-1 md:grow-0'>
-                        <Search className='text-muted-foreground absolute left-2.5 top-2.5 size-4' />
+                        <Search className='absolute left-2.5 top-2.5 size-4 text-muted-foreground' />
                         <Input
                             type='search'
                             placeholder='Search...'
-                            className='bg-background w-full rounded-lg pl-8 md:w-[200px] lg:w-[320px]'
+                            className='w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[320px]'
                         />
                     </div>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button variant='outline' size='icon' className='overflow-hidden rounded-full'>
                                 <Image
-                                    src='https://ui.shadcn.com/placeholder-user.jpg'
+                                    src='/placeholder-user.jpg'
                                     width={36}
                                     height={36}
                                     alt='Avatar'
@@ -260,7 +260,7 @@ export default function Dashboard() {
                                     <CardTitle className='text-4xl'>$1,329</CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className='text-muted-foreground text-xs'>+25% from last week</div>
+                                    <div className='text-xs text-muted-foreground'>+25% from last week</div>
                                 </CardContent>
                                 <CardFooter>
                                     <Progress value={25} aria-label='25% increase' />
@@ -272,7 +272,7 @@ export default function Dashboard() {
                                     <CardTitle className='text-4xl'>$5,329</CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className='text-muted-foreground text-xs'>+10% from last month</div>
+                                    <div className='text-xs text-muted-foreground'>+10% from last month</div>
                                 </CardContent>
                                 <CardFooter>
                                     <Progress value={12} aria-label='12% increase' />
@@ -329,7 +329,7 @@ export default function Dashboard() {
                                                 <TableRow className='bg-accent'>
                                                     <TableCell>
                                                         <div className='font-medium'>Liam Johnson</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             liam@example.com
                                                         </div>
                                                     </TableCell>
@@ -345,7 +345,7 @@ export default function Dashboard() {
                                                 <TableRow>
                                                     <TableCell>
                                                         <div className='font-medium'>Olivia Smith</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             olivia@example.com
                                                         </div>
                                                     </TableCell>
@@ -381,7 +381,7 @@ export default function Dashboard() {
                                                 <TableRow>
                                                     <TableCell>
                                                         <div className='font-medium'>Noah Williams</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             noah@example.com
                                                         </div>
                                                     </TableCell>
@@ -397,7 +397,7 @@ export default function Dashboard() {
                                                 <TableRow>
                                                     <TableCell>
                                                         <div className='font-medium'>Emma Brown</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             emma@example.com
                                                         </div>
                                                     </TableCell>
@@ -413,7 +413,7 @@ export default function Dashboard() {
                                                 <TableRow>
                                                     <TableCell>
                                                         <div className='font-medium'>Liam Johnson</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             liam@example.com
                                                         </div>
                                                     </TableCell>
@@ -429,7 +429,7 @@ export default function Dashboard() {
                                                 <TableRow>
                                                     <TableCell>
                                                         <div className='font-medium'>Olivia Smith</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             olivia@example.com
                                                         </div>
                                                     </TableCell>
@@ -445,7 +445,7 @@ export default function Dashboard() {
                                                 <TableRow>
                                                     <TableCell>
                                                         <div className='font-medium'>Emma Brown</div>
-                                                        <div className='text-muted-foreground hidden text-sm md:inline'>
+                                                        <div className='hidden text-sm text-muted-foreground md:inline'>
                                                             emma@example.com
                                                         </div>
                                                     </TableCell>
@@ -469,7 +469,7 @@ export default function Dashboard() {
                         <Card
                             className='overflow-hidden'
                             x-chunk='An order details card with order details, shipping information, customer information and payment information.'>
-                            <CardHeader className='bg-muted/50 flex flex-row items-start'>
+                            <CardHeader className='flex flex-row items-start bg-muted/50'>
                                 <div className='grid gap-0.5'>
                                     <CardTitle className='group flex items-center gap-2 text-lg'>
                                         Order Oe31b70H
@@ -547,7 +547,7 @@ export default function Dashboard() {
                                 <div className='grid grid-cols-2 gap-4'>
                                     <div className='grid gap-3'>
                                         <div className='font-semibold'>Shipping Information</div>
-                                        <address className='text-muted-foreground grid gap-0.5 not-italic'>
+                                        <address className='grid gap-0.5 not-italic text-muted-foreground'>
                                             <span>Liam Johnson</span>
                                             <span>1234 Main St.</span>
                                             <span>Anytown, CA 12345</span>
@@ -585,7 +585,7 @@ export default function Dashboard() {
                                     <div className='font-semibold'>Payment Information</div>
                                     <dl className='grid gap-3'>
                                         <div className='flex items-center justify-between'>
-                                            <dt className='text-muted-foreground flex items-center gap-1'>
+                                            <dt className='flex items-center gap-1 text-muted-foreground'>
                                                 <CreditCard className='size-4' />
                                                 Visa
                                             </dt>
@@ -594,8 +594,8 @@ export default function Dashboard() {
                                     </dl>
                                 </div>
                             </CardContent>
-                            <CardFooter className='bg-muted/50 flex flex-row items-center border-t px-6 py-3'>
-                                <div className='text-muted-foreground text-xs'>
+                            <CardFooter className='flex flex-row items-center border-t bg-muted/50 px-6 py-3'>
+                                <div className='text-xs text-muted-foreground'>
                                     Updated <time dateTime='2023-11-23'>November 23, 2023</time>
                                 </div>
                                 <Pagination className='ml-auto mr-0 w-auto'>

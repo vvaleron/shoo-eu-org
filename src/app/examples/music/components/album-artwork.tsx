@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import { PlusCircledIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import {
     ContextMenu,
@@ -13,6 +11,7 @@ import {
     ContextMenuSubTrigger,
     ContextMenuTrigger
 } from '@/registry/new-york/ui/context-menu';
+import { PlusCircledIcon } from '@radix-ui/react-icons';
 
 import { Album } from '../data/albums';
 import { playlists } from '../data/playlists';

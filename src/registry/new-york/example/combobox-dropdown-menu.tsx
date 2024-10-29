@@ -2,8 +2,6 @@
 
 import * as React from 'react';
 
-import { DotsHorizontalIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import {
     Command,
@@ -26,6 +24,7 @@ import {
     DropdownMenuSubTrigger,
     DropdownMenuTrigger
 } from '@/registry/new-york/ui/dropdown-menu';
+import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 
 const labels = ['feature', 'bug', 'enhancement', 'documentation', 'design', 'question', 'maintenance'];
 

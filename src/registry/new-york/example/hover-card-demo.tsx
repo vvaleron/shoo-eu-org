@@ -1,8 +1,7 @@
-import { CalendarIcon } from '@radix-ui/react-icons';
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york/ui/avatar';
 import { Button } from '@/registry/new-york/ui/button';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/registry/new-york/ui/hover-card';
+import { CalendarIcon } from '@radix-ui/react-icons';
 
 export default function HoverCardDemo() {
     return (

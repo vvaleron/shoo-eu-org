@@ -1,5 +1,3 @@
-import { SlashIcon } from '@radix-ui/react-icons';
-
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -8,6 +6,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator
 } from '@/registry/new-york/ui/breadcrumb';
+import { SlashIcon } from '@radix-ui/react-icons';
 
 export default function BreadcrumbWithCustomSeparator() {
     return (

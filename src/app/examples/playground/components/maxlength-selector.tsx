@@ -2,11 +2,10 @@
 
 import * as React from 'react';
 
-import { SliderProps } from '@radix-ui/react-slider';
-
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/registry/new-york/ui/hover-card';
 import { Label } from '@/registry/new-york/ui/label';
 import { Slider } from '@/registry/new-york/ui/slider';
+import { SliderProps } from '@radix-ui/react-slider';
 
 interface MaxLengthSelectorProps {
     defaultValue: SliderProps['defaultValue'];

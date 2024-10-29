@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/new-york/ui/button';
 import {
     Drawer,
@@ -13,6 +11,7 @@ import {
     DrawerTitle,
     DrawerTrigger
 } from '@/registry/new-york/ui/drawer';
+import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
 
 import { Bar, BarChart, ResponsiveContainer } from 'recharts';
 

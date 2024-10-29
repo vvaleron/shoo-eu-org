@@ -2,8 +2,6 @@
 
 import * as React from 'react';
 
-import { CaretSortIcon, ChevronDownIcon, DotsHorizontalIcon } from '@radix-ui/react-icons';
-
 import { Button } from '@/registry/default/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/registry/default/ui/card';
 import { Checkbox } from '@/registry/default/ui/checkbox';
@@ -18,6 +16,7 @@ import {
 } from '@/registry/default/ui/dropdown-menu';
 import { Input } from '@/registry/default/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/registry/default/ui/table';
+import { CaretSortIcon, ChevronDownIcon, DotsHorizontalIcon } from '@radix-ui/react-icons';
 import {
     ColumnDef,
     ColumnFiltersState,

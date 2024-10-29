@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import { CheckIcon, PlusCircledIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import { Badge } from '@/registry/new-york/ui/badge';
 import { Button } from '@/registry/new-york/ui/button';
@@ -16,6 +14,7 @@ import {
 } from '@/registry/new-york/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
 import { Separator } from '@/registry/new-york/ui/separator';
+import { CheckIcon, PlusCircledIcon } from '@radix-ui/react-icons';
 import { Column } from '@tanstack/react-table';
 
 interface DataTableFacetedFilterProps<TData, TValue> {
@@ -78,8 +77,8 @@ export function DataTableFacetedFilter<TData, TValue>({
                         <CommandGroup>
                             {options.map((option) => {
                                 const isSelected = selectedValues.has(option.value);
-                                
-return (
+
+                                return (
                                     <CommandItem
                                         key={option.value}
                                         onSelect={() => {

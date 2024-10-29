@@ -2,12 +2,11 @@
 
 import * as React from 'react';
 
-import { CalendarIcon } from '@radix-ui/react-icons';
-
 import { cn } from '@/lib/utils';
 import { Button } from '@/registry/new-york/ui/button';
 import { Calendar } from '@/registry/new-york/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
+import { CalendarIcon } from '@radix-ui/react-icons';
 
 import { addDays, format } from 'date-fns';
 import { DateRange } from 'react-day-picker';
@@ -45,7 +44,6 @@ export function CalendarDateRangePicker({ className }: React.HTMLAttributes<HTML
                 </PopoverTrigger>
                 <PopoverContent className='w-auto p-0' align='end'>
                     <Calendar
-                        initialFocus
                         mode='range'
                         defaultMonth={date?.from}
                         selected={date}

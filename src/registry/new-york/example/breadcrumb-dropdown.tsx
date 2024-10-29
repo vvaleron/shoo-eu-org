@@ -1,5 +1,3 @@
-import { ChevronDownIcon, SlashIcon } from '@radix-ui/react-icons';
-
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -14,6 +12,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger
 } from '@/registry/new-york/ui/dropdown-menu';
+import { ChevronDownIcon, SlashIcon } from '@radix-ui/react-icons';
 
 export default function BreadcrumbWithDropdown() {
     return (

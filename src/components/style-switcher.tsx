@@ -2,12 +2,11 @@
 
 import * as React from 'react';
 
-import { type SelectTriggerProps } from '@radix-ui/react-select';
-
 import { useConfig } from '@/hooks/use-config';
 import { cn } from '@/lib/utils';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/registry/new-york/ui/select';
 import { Style, styles } from '@/registry/registry-styles';
+import { type SelectTriggerProps } from '@radix-ui/react-select';
 
 export function StyleSwitcher({ className, ...props }: SelectTriggerProps) {
     const [config, setConfig] = useConfig();

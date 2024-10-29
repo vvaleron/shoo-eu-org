@@ -4,9 +4,6 @@ import * as React from 'react';
 
 import { useRouter } from 'next/navigation';
 
-import { CaretSortIcon, CheckIcon } from '@radix-ui/react-icons';
-import { PopoverProps } from '@radix-ui/react-popover';
-
 import { cn } from '@/lib/utils';
 import { Button } from '@/registry/new-york/ui/button';
 import {
@@ -18,6 +15,8 @@ import {
     CommandList
 } from '@/registry/new-york/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
+import { CaretSortIcon, CheckIcon } from '@radix-ui/react-icons';
+import { PopoverProps } from '@radix-ui/react-popover';
 
 import { Preset } from '../data/presets';
 

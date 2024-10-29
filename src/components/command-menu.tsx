@@ -6,9 +6,6 @@ import { useRouter } from 'next/navigation';
 
 import { useTheme } from 'next-themes';
 
-import { type DialogProps } from '@radix-ui/react-dialog';
-import { CircleIcon, FileIcon, LaptopIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
-
 import { docsConfig } from '@/config/docs';
 import { cn } from '@/lib/utils';
 import { Button } from '@/registry/new-york/ui/button';
@@ -21,6 +18,8 @@ import {
     CommandList,
     CommandSeparator
 } from '@/registry/new-york/ui/command';
+import { type DialogProps } from '@radix-ui/react-dialog';
+import { CircleIcon, FileIcon, LaptopIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
 export function CommandMenu({ ...props }: DialogProps) {
     const router = useRouter();
@@ -45,8 +44,8 @@ export function CommandMenu({ ...props }: DialogProps) {
         };
 
         document.addEventListener('keydown', down);
-        
-return () => document.removeEventListener('keydown', down);
+
+        return () => document.removeEventListener('keydown', down);
     }, []);
 
     const runCommand = React.useCallback((command: () => unknown) => {
@@ -90,7 +89,7 @@ return () => document.removeEventListener('keydown', down);
                     </CommandGroup>
                     {docsConfig.sidebarNav.map((group) => (
                         <CommandGroup key={group.title} heading={group.title}>
-                            {group.items.map((navItem) => (
+                            {group.items.map((navItem: { href: string; title: string }) => (
                                 <CommandItem
                                     key={navItem.href}
                                     value={navItem.title}

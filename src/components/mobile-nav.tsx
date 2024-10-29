@@ -5,8 +5,6 @@ import * as React from 'react';
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/navigation';
 
-import { ViewVerticalIcon } from '@radix-ui/react-icons';
-
 import { Icons } from '@/components/icons';
 import { docsConfig } from '@/config/docs';
 import { siteConfig } from '@/config/site';
@@ -14,6 +12,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/registry/new-york/ui/button';
 import { ScrollArea } from '@/registry/new-york/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/registry/new-york/ui/sheet';
+import { ViewVerticalIcon } from '@radix-ui/react-icons';
 
 export function MobileNav() {
     const [open, setOpen] = React.useState(false);
@@ -110,8 +109,8 @@ interface MobileLinkProps extends LinkProps {
 
 function MobileLink({ href, onOpenChange, className, children, ...props }: MobileLinkProps) {
     const router = useRouter();
-    
-return (
+
+    return (
         <Link
             href={href}
             onClick={() => {
