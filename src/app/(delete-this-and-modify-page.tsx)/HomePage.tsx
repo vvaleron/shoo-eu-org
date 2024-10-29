@@ -1,20 +1,27 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-import InfoAccordion from '@/app/(delete-this-and-modify-page.tsx)/InfoAccordion';
+import ExtensionDetails from '@/app/(delete-this-and-modify-page.tsx)/ExtensionDetails';
+import NavigationBar from '@/app/(delete-this-and-modify-page.tsx)/NavigationBar';
+import SetupDetails from '@/app/(delete-this-and-modify-page.tsx)/SetupDetails';
 
 const HomePage: React.FC = () => {
     return (
         <main className='mx-auto flex h-screen max-w-3xl flex-col justify-center gap-6 px-3 pt-6 font-[family-name:var(--font-geist-sans)] sm:gap-12 sm:px-0 sm:pt-0'>
+            <NavigationBar />
             <div className='justify-centersm:items-start row-start-2 flex flex-col items-center gap-8'>
-                <Image
-                    className='dark:invert'
-                    src='https://nextjs.org/icons/next.svg'
-                    alt='Next.js logo'
-                    width={180}
-                    height={38}
-                    priority
-                />
+                <div className='flex items-center gap-4'>
+                    <Image
+                        className='dark:invert'
+                        src='https://nextjs.org/icons/next.svg'
+                        alt='Next.js logo'
+                        width={180}
+                        height={38}
+                        priority
+                    />
+                    <h6 className='text-3xl font-bold'>+</h6>
+                    {/* prettier-ignore */}
+                    <div className="mr-4 flex items-center space-x-2 lg:mr-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="size-8"><rect width="256" height="256" fill="none"></rect><line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line><line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line></svg><span className="hidden font-bold lg:inline-block text-lg">shadcn/ui</span></div>
+                </div>
                 <ol className='list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left'>
                     <li className='mb-2'>
                         Get started by editing{' '}
@@ -45,7 +52,7 @@ const HomePage: React.FC = () => {
                         href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
                         target='_blank'
                         rel='noopener noreferrer'>
-                        Read our docs
+                        Read Next.js docs
                     </a>
                 </div>
             </div>
@@ -89,21 +96,11 @@ const HomePage: React.FC = () => {
             </div>
             <div className='space-y-6'>
                 <h2 className='text-center text-lg'>Whats included?</h2>
-                <div className='flex justify-center gap-2'>
-                    <Link
-                        className='text-lg font-medium text-blue-500'
-                        href='https://github.com/SiddharthaMaity/nextjs-15-starter-core'
-                        target='_blank'>
-                        Next.js 15 Starter Core ↗
-                    </Link>
-                    <span className='text-xl'>+</span>
-                    <Link className='text-lg font-medium text-blue-500' href='https://ui.shadcn.com/' target='_blank'>
-                        Shadcn UI ↗
-                    </Link>
-                </div>
+                <SetupDetails />
             </div>
-            <div className='mx-auto w-full max-w-lg'>
-                <InfoAccordion />
+            <div className='space-y-6'>
+                <h2 className='text-center text-lg'>VS Code Extensions</h2>
+                <ExtensionDetails />
             </div>
         </main>
     );
