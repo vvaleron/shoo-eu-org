@@ -17,7 +17,7 @@ interface ExamplesLayoutProps {
 
 export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
     return (
-        <div className='container relative mx-auto mb-12'>
+        <div className='container relative mx-auto my-12'>
             <PageHeader>
                 <Announcement />
                 <PageHeaderHeading className='hidden md:block'>Check out some examples</PageHeaderHeading>

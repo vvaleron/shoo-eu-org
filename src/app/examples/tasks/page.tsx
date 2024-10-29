@@ -1,6 +1,3 @@
-import { promises as fs } from 'fs';
-import path from 'path';
-
 import { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -8,6 +5,7 @@ import { columns } from './components/columns';
 import { DataTable } from './components/data-table';
 import { UserNav } from './components/user-nav';
 import { taskSchema } from './data/schema';
+import tasks from './data/tasks.json';
 import { z } from 'zod';
 
 export const metadata: Metadata = {
@@ -17,10 +15,6 @@ export const metadata: Metadata = {
 
 // Simulate a database read for tasks.
 async function getTasks() {
-    const data = await fs.readFile(path.join(process.cwd(), 'app/(app)/examples/tasks/data/tasks.json'));
-
-    const tasks = JSON.parse(data.toString());
-
     return z.array(taskSchema).parse(tasks);
 }
 
