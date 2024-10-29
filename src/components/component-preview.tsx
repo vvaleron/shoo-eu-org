@@ -48,9 +48,9 @@ export function ComponentPreview({
 
         if (!Component) {
             return (
-                <p className='text-sm text-muted-foreground'>
+                <p className='text-muted-foreground text-sm'>
                     Component{' '}
-                    <code className='relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm'>{name}</code>{' '}
+                    <code className='bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm'>{name}</code>{' '}
                     not found in registry.
                 </p>
             );
@@ -62,8 +62,8 @@ export function ComponentPreview({
     const codeString = React.useMemo(() => {
         if (typeof Code?.props['data-rehype-pretty-code-fragment'] !== 'undefined') {
             const [Button] = React.Children.toArray(Code.props.children) as React.ReactElement[];
-            
-return Button?.props?.value || Button?.props?.__rawString__ || null;
+
+            return Button?.props?.value || Button?.props?.__rawString__ || null;
         }
     }, [Code]);
 
@@ -71,21 +71,21 @@ return Button?.props?.value || Button?.props?.__rawString__ || null;
         return (
             <div className='relative aspect-[4/2.5] w-full overflow-hidden rounded-md border'>
                 <Image
-                    src={`/images/blocks/${name}.png`}
+                    src={`https://ui.shadcn.com/images/blocks/${name}.png`}
                     alt={name}
                     width={1440}
                     height={900}
-                    className='absolute left-0 top-0 z-20 w-[970px] max-w-none bg-background dark:hidden sm:w-[1280px] md:hidden md:dark:hidden'
+                    className='bg-background absolute left-0 top-0 z-20 w-[970px] max-w-none dark:hidden sm:w-[1280px] md:hidden md:dark:hidden'
                 />
                 <Image
-                    src={`/images/blocks/${name}-dark.png`}
+                    src={`https://ui.shadcn.com/images/blocks/${name}-dark.png`}
                     alt={name}
                     width={1440}
                     height={900}
-                    className='absolute left-0 top-0 z-20 hidden w-[970px] max-w-none bg-background dark:block sm:w-[1280px] md:hidden md:dark:hidden'
+                    className='bg-background absolute left-0 top-0 z-20 hidden w-[970px] max-w-none dark:block sm:w-[1280px] md:hidden md:dark:hidden'
                 />
-                <div className='absolute inset-0 hidden w-[1600px] bg-background md:block'>
-                    <iframe src={`/blocks/${config.style}/${name}`} className='size-full' />
+                <div className='bg-background absolute inset-0 hidden w-[1600px] md:block'>
+                    <iframe src={`https://ui.shadcn.com/blocks/${config.style}/${name}`} className='size-full' />
                 </div>
             </div>
         );
@@ -99,12 +99,12 @@ return Button?.props?.value || Button?.props?.__rawString__ || null;
                         <TabsList className='w-full justify-start rounded-none border-b bg-transparent p-0'>
                             <TabsTrigger
                                 value='preview'
-                                className='relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none'>
+                                className='text-muted-foreground data-[state=active]:border-b-primary data-[state=active]:text-foreground relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold shadow-none transition-none data-[state=active]:shadow-none'>
                                 Preview
                             </TabsTrigger>
                             <TabsTrigger
                                 value='code'
-                                className='relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none'>
+                                className='text-muted-foreground data-[state=active]:border-b-primary data-[state=active]:text-foreground relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold shadow-none transition-none data-[state=active]:shadow-none'>
                                 Code
                             </TabsTrigger>
                         </TabsList>
@@ -118,7 +118,7 @@ return Button?.props?.value || Button?.props?.__rawString__ || null;
                             <CopyButton
                                 value={codeString}
                                 variant='outline'
-                                className='size-7 text-foreground opacity-100 hover:bg-muted hover:text-foreground [&_svg]:size-3.5'
+                                className='text-foreground hover:bg-muted hover:text-foreground size-7 opacity-100 [&_svg]:size-3.5'
                             />
                         </div>
                     </div>
@@ -131,7 +131,7 @@ return Button?.props?.value || Button?.props?.__rawString__ || null;
                             })}>
                             <React.Suspense
                                 fallback={
-                                    <div className='flex w-full items-center justify-center text-sm text-muted-foreground'>
+                                    <div className='text-muted-foreground flex w-full items-center justify-center text-sm'>
                                         <Icons.spinner className='mr-2 size-4 animate-spin' />
                                         Loading...
                                     </div>

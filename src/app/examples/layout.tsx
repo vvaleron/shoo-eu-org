@@ -17,21 +17,27 @@ interface ExamplesLayoutProps {
 
 export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
     return (
-        <div className='container relative mx-auto my-12'>
+        <div className='container relative mx-auto mb-12 mt-20 sm:mt-12'>
             <PageHeader>
-                <Announcement />
                 <PageHeaderHeading className='hidden md:block'>Check out some examples</PageHeaderHeading>
                 <PageHeaderHeading className='md:hidden'>Examples</PageHeaderHeading>
                 <PageHeaderDescription>
-                    Dashboard, cards, authentication. Some examples built using the components. Use this as a guide to
-                    build your own.
+                    These examples are taken from shadcn official repo on Github (
+                    <Link className='text-blue-500' href='https://github.com/shadcn-ui/ui'>
+                        https://github.com/shadcn-ui/ui
+                    </Link>
+                    )
                 </PageHeaderDescription>
                 <PageActions>
                     <Button asChild size='sm'>
-                        <Link href='/docs'>Get Started</Link>
+                        <Link href='https://ui.shadcn.com' target='_blank'>
+                            Shadcn UI
+                        </Link>
                     </Button>
                     <Button asChild size='sm' variant='ghost'>
-                        <Link href='/components'>Components</Link>
+                        <Link href='https://github.com/SiddharthaMaity/nextjs-15-starter-core' target='_blank'>
+                            Github
+                        </Link>
                     </Button>
                 </PageActions>
             </PageHeader>

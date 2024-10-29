@@ -41,14 +41,14 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
         <>
             <div className='md:hidden'>
                 <Image
-                    src='/examples/forms-light.png'
+                    src='https://ui.shadcn.com/examples/forms-light.png'
                     width={1280}
                     height={791}
                     alt='Forms'
                     className='block dark:hidden'
                 />
                 <Image
-                    src='/examples/forms-dark.png'
+                    src='https://ui.shadcn.com/examples/forms-dark.png'
                     width={1280}
                     height={791}
                     alt='Forms'

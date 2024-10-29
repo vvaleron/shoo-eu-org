@@ -10,7 +10,6 @@ const PAGES = [
 
 const NavigationLinks = () => {
     const pathname = usePathname();
-    console.log(pathname);
 
     return (
         <div className='flex items-center gap-3'>

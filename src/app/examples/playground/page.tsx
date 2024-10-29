@@ -32,14 +32,14 @@ export default function PlaygroundPage() {
         <>
             <div className='md:hidden'>
                 <Image
-                    src='/examples/playground-light.png'
+                    src='https://ui.shadcn.com/examples/playground-light.png'
                     width={1280}
                     height={916}
                     alt='Playground'
                     className='block dark:hidden'
                 />
                 <Image
-                    src='/examples/playground-dark.png'
+                    src='https://ui.shadcn.com/examples/playground-dark.png'
                     width={1280}
                     height={916}
                     alt='Playground'
@@ -248,7 +248,7 @@ export default function PlaygroundPage() {
                                                 placeholder="We're writing to [inset]. Congrats from OpenAI!"
                                                 className='h-full min-h-[300px] lg:min-h-[700px] xl:min-h-[700px]'
                                             />
-                                            <div className='rounded-md border bg-muted'></div>
+                                            <div className='bg-muted rounded-md border'></div>
                                         </div>
                                         <div className='flex items-center space-x-2'>
                                             <Button>Submit</Button>
@@ -276,7 +276,7 @@ export default function PlaygroundPage() {
                                                     <Textarea id='instructions' placeholder='Fix the grammar.' />
                                                 </div>
                                             </div>
-                                            <div className='mt-[21px] min-h-[400px] rounded-md border bg-muted lg:min-h-[700px]' />
+                                            <div className='bg-muted mt-[21px] min-h-[400px] rounded-md border lg:min-h-[700px]' />
                                         </div>
                                         <div className='flex items-center space-x-2'>
                                             <Button>Submit</Button>

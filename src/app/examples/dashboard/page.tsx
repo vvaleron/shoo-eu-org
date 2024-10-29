@@ -22,14 +22,14 @@ export default function DashboardPage() {
         <>
             <div className='md:hidden'>
                 <Image
-                    src='/examples/dashboard-light.png'
+                    src='https://ui.shadcn.com/examples/dashboard-light.png'
                     width={1280}
                     height={866}
                     alt='Dashboard'
                     className='block dark:hidden'
                 />
                 <Image
-                    src='/examples/dashboard-dark.png'
+                    src='https://ui.shadcn.com/examples/dashboard-dark.png'
                     width={1280}
                     height={866}
                     alt='Dashboard'
@@ -81,13 +81,13 @@ export default function DashboardPage() {
                                             strokeLinecap='round'
                                             strokeLinejoin='round'
                                             strokeWidth='2'
-                                            className='size-4 text-muted-foreground'>
+                                            className='text-muted-foreground size-4'>
                                             <path d='M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6' />
                                         </svg>
                                     </CardHeader>
                                     <CardContent>
                                         <div className='text-2xl font-bold'>$45,231.89</div>
-                                        <p className='text-xs text-muted-foreground'>+20.1% from last month</p>
+                                        <p className='text-muted-foreground text-xs'>+20.1% from last month</p>
                                     </CardContent>
                                 </Card>
                                 <Card>
@@ -101,7 +101,7 @@ export default function DashboardPage() {
                                             strokeLinecap='round'
                                             strokeLinejoin='round'
                                             strokeWidth='2'
-                                            className='size-4 text-muted-foreground'>
+                                            className='text-muted-foreground size-4'>
                                             <path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2' />
                                             <circle cx='9' cy='7' r='4' />
                                             <path d='M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75' />
@@ -109,7 +109,7 @@ export default function DashboardPage() {
                                     </CardHeader>
                                     <CardContent>
                                         <div className='text-2xl font-bold'>+2350</div>
-                                        <p className='text-xs text-muted-foreground'>+180.1% from last month</p>
+                                        <p className='text-muted-foreground text-xs'>+180.1% from last month</p>
                                     </CardContent>
                                 </Card>
                                 <Card>
@@ -123,14 +123,14 @@ export default function DashboardPage() {
                                             strokeLinecap='round'
                                             strokeLinejoin='round'
                                             strokeWidth='2'
-                                            className='size-4 text-muted-foreground'>
+                                            className='text-muted-foreground size-4'>
                                             <rect width='20' height='14' x='2' y='5' rx='2' />
                                             <path d='M2 10h20' />
                                         </svg>
                                     </CardHeader>
                                     <CardContent>
                                         <div className='text-2xl font-bold'>+12,234</div>
-                                        <p className='text-xs text-muted-foreground'>+19% from last month</p>
+                                        <p className='text-muted-foreground text-xs'>+19% from last month</p>
                                     </CardContent>
                                 </Card>
                                 <Card>
@@ -144,13 +144,13 @@ export default function DashboardPage() {
                                             strokeLinecap='round'
                                             strokeLinejoin='round'
                                             strokeWidth='2'
-                                            className='size-4 text-muted-foreground'>
+                                            className='text-muted-foreground size-4'>
                                             <path d='M22 12h-4l-3 9L9 3l-3 9H2' />
                                         </svg>
                                     </CardHeader>
                                     <CardContent>
                                         <div className='text-2xl font-bold'>+573</div>
-                                        <p className='text-xs text-muted-foreground'>+201 since last hour</p>
+                                        <p className='text-muted-foreground text-xs'>+201 since last hour</p>
                                     </CardContent>
                                 </Card>
                             </div>

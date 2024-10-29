@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import InfoAccordion from '@/app/(delete-this-and-modify-page.tsx)/InfoAccordion';
-import ThemeSwitch from '@/app/(delete-this-and-modify-page.tsx)/ThemeSwitch';
 
 const HomePage: React.FC = () => {
     return (
@@ -50,7 +49,6 @@ const HomePage: React.FC = () => {
                     </a>
                 </div>
             </div>
-
             <div className='row-start-3 hidden flex-wrap items-center justify-center gap-6 sm:flex'>
                 <a
                     className='flex items-center gap-2 hover:underline hover:underline-offset-4'

@@ -5,11 +5,11 @@ import ThemeSwitch from './ThemeSwitch';
 
 const NavigationBar = () => {
     return (
-        <div className='fixed top-0 flex h-24 w-full items-center justify-between px-6'>
+        <div className='fixed top-0 flex h-24 w-full flex-wrap items-center justify-between px-6'>
             <div className='flex items-center gap-3'>
                 <NavigationLinks />
             </div>
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center gap-6'>
                 <ThemeSwitch />
                 <Link href='https://github.com/SiddharthaMaity/nextjs-15-starter-shadcn' target='_blank'>
                     {/* prettier-ignore */}
