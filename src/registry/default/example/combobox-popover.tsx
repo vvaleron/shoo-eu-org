@@ -62,7 +62,7 @@ export default function ComboboxPopover() {
                     <Button variant='outline' size='sm' className='w-[150px] justify-start'>
                         {selectedStatus ? (
                             <>
-                                <selectedStatus.icon className='mr-2 h-4 w-4 shrink-0' />
+                                <selectedStatus.icon className='mr-2 size-4 shrink-0' />
                                 {selectedStatus.label}
                             </>
                         ) : (

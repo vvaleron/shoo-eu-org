@@ -31,7 +31,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Button variant='ghost' size='icon' disabled={!mail}>
-                                <Archive className='h-4 w-4' />
+                                <Archive className='size-4' />
                                 <span className='sr-only'>Archive</span>
                             </Button>
                         </TooltipTrigger>
@@ -40,7 +40,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Button variant='ghost' size='icon' disabled={!mail}>
-                                <ArchiveX className='h-4 w-4' />
+                                <ArchiveX className='size-4' />
                                 <span className='sr-only'>Move to junk</span>
                             </Button>
                         </TooltipTrigger>
@@ -49,7 +49,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Button variant='ghost' size='icon' disabled={!mail}>
-                                <Trash2 className='h-4 w-4' />
+                                <Trash2 className='size-4' />
                                 <span className='sr-only'>Move to trash</span>
                             </Button>
                         </TooltipTrigger>
@@ -61,7 +61,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                             <PopoverTrigger asChild>
                                 <TooltipTrigger asChild>
                                     <Button variant='ghost' size='icon' disabled={!mail}>
-                                        <Clock className='h-4 w-4' />
+                                        <Clock className='size-4' />
                                         <span className='sr-only'>Snooze</span>
                                     </Button>
                                 </TooltipTrigger>
@@ -108,7 +108,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Button variant='ghost' size='icon' disabled={!mail}>
-                                <Reply className='h-4 w-4' />
+                                <Reply className='size-4' />
                                 <span className='sr-only'>Reply</span>
                             </Button>
                         </TooltipTrigger>
@@ -117,7 +117,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Button variant='ghost' size='icon' disabled={!mail}>
-                                <ReplyAll className='h-4 w-4' />
+                                <ReplyAll className='size-4' />
                                 <span className='sr-only'>Reply all</span>
                             </Button>
                         </TooltipTrigger>
@@ -126,7 +126,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <Button variant='ghost' size='icon' disabled={!mail}>
-                                <Forward className='h-4 w-4' />
+                                <Forward className='size-4' />
                                 <span className='sr-only'>Forward</span>
                             </Button>
                         </TooltipTrigger>
@@ -137,7 +137,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button variant='ghost' size='icon' disabled={!mail}>
-                            <MoreVertical className='h-4 w-4' />
+                            <MoreVertical className='size-4' />
                             <span className='sr-only'>More</span>
                         </Button>
                     </DropdownMenuTrigger>

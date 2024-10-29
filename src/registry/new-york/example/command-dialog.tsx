@@ -27,7 +27,8 @@ export default function CommandDialogDemo() {
         };
 
         document.addEventListener('keydown', down);
-        return () => document.removeEventListener('keydown', down);
+        
+return () => document.removeEventListener('keydown', down);
     }, []);
 
     return (

@@ -323,7 +323,7 @@ export default function Page() {
                                     <SidebarMenuButton
                                         size='lg'
                                         className='data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground'>
-                                        <Avatar className='h-8 w-8 rounded-lg'>
+                                        <Avatar className='size-8 rounded-lg'>
                                             <AvatarImage src={data.user.avatar} alt={data.user.name} />
                                             <AvatarFallback className='rounded-lg'>CN</AvatarFallback>
                                         </Avatar>
@@ -341,7 +341,7 @@ export default function Page() {
                                     sideOffset={4}>
                                     <DropdownMenuLabel className='p-0 font-normal'>
                                         <div className='flex items-center gap-2 px-1 py-1.5 text-left text-sm'>
-                                            <Avatar className='h-8 w-8 rounded-lg'>
+                                            <Avatar className='size-8 rounded-lg'>
                                                 <AvatarImage src={data.user.avatar} alt={data.user.name} />
                                                 <AvatarFallback className='rounded-lg'>CN</AvatarFallback>
                                             </Avatar>
@@ -408,7 +408,7 @@ export default function Page() {
                         <div className='aspect-video rounded-xl bg-muted/50' />
                         <div className='aspect-video rounded-xl bg-muted/50' />
                     </div>
-                    <div className='min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min' />
+                    <div className='min-h-screen flex-1 rounded-xl bg-muted/50 md:min-h-min' />
                 </div>
             </SidebarInset>
         </SidebarProvider>

@@ -45,7 +45,8 @@ export function CommandMenu({ ...props }: DialogProps) {
         };
 
         document.addEventListener('keydown', down);
-        return () => document.removeEventListener('keydown', down);
+        
+return () => document.removeEventListener('keydown', down);
     }, []);
 
     const runCommand = React.useCallback((command: () => unknown) => {
@@ -82,7 +83,7 @@ export function CommandMenu({ ...props }: DialogProps) {
                                     onSelect={() => {
                                         runCommand(() => router.push(navItem.href as string));
                                     }}>
-                                    <FileIcon className='mr-2 h-4 w-4' />
+                                    <FileIcon className='mr-2 size-4' />
                                     {navItem.title}
                                 </CommandItem>
                             ))}
@@ -96,8 +97,8 @@ export function CommandMenu({ ...props }: DialogProps) {
                                     onSelect={() => {
                                         runCommand(() => router.push(navItem.href as string));
                                     }}>
-                                    <div className='mr-2 flex h-4 w-4 items-center justify-center'>
-                                        <CircleIcon className='h-3 w-3' />
+                                    <div className='mr-2 flex size-4 items-center justify-center'>
+                                        <CircleIcon className='size-3' />
                                     </div>
                                     {navItem.title}
                                 </CommandItem>
@@ -107,15 +108,15 @@ export function CommandMenu({ ...props }: DialogProps) {
                     <CommandSeparator />
                     <CommandGroup heading='Theme'>
                         <CommandItem onSelect={() => runCommand(() => setTheme('light'))}>
-                            <SunIcon className='mr-2 h-4 w-4' />
+                            <SunIcon className='mr-2 size-4' />
                             Light
                         </CommandItem>
                         <CommandItem onSelect={() => runCommand(() => setTheme('dark'))}>
-                            <MoonIcon className='mr-2 h-4 w-4' />
+                            <MoonIcon className='mr-2 size-4' />
                             Dark
                         </CommandItem>
                         <CommandItem onSelect={() => runCommand(() => setTheme('system'))}>
-                            <LaptopIcon className='mr-2 h-4 w-4' />
+                            <LaptopIcon className='mr-2 size-4' />
                             System
                         </CommandItem>
                     </CommandGroup>

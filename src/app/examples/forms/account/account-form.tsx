@@ -120,7 +120,7 @@ export function AccountForm() {
                                                 !field.value && 'text-muted-foreground'
                                             )}>
                                             {field.value ? format(field.value, 'PPP') : <span>Pick a date</span>}
-                                            <CalendarIcon className='ml-auto h-4 w-4 opacity-50' />
+                                            <CalendarIcon className='ml-auto size-4 opacity-50' />
                                         </Button>
                                     </FormControl>
                                 </PopoverTrigger>
@@ -158,7 +158,7 @@ export function AccountForm() {
                                             {field.value
                                                 ? languages.find((language) => language.value === field.value)?.label
                                                 : 'Select language'}
-                                            <CaretSortIcon className='ml-2 h-4 w-4 shrink-0 opacity-50' />
+                                            <CaretSortIcon className='ml-2 size-4 shrink-0 opacity-50' />
                                         </Button>
                                     </FormControl>
                                 </PopoverTrigger>

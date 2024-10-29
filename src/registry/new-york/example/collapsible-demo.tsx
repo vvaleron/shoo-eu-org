@@ -16,7 +16,7 @@ export default function CollapsibleDemo() {
                 <h4 className='text-sm font-semibold'>@peduarte starred 3 repositories</h4>
                 <CollapsibleTrigger asChild>
                     <Button variant='ghost' size='sm'>
-                        <CaretSortIcon className='h-4 w-4' />
+                        <CaretSortIcon className='size-4' />
                         <span className='sr-only'>Toggle</span>
                     </Button>
                 </CollapsibleTrigger>

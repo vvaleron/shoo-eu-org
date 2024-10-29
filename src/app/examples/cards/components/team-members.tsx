@@ -35,7 +35,7 @@ export function DemoTeamMembers() {
                     <Popover>
                         <PopoverTrigger asChild>
                             <Button variant='outline' className='ml-auto'>
-                                Owner <ChevronDownIcon className='ml-2 h-4 w-4 text-muted-foreground' />
+                                Owner <ChevronDownIcon className='ml-2 size-4 text-muted-foreground' />
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent className='p-0' align='end'>
@@ -84,7 +84,7 @@ export function DemoTeamMembers() {
                     <Popover>
                         <PopoverTrigger asChild>
                             <Button variant='outline' className='ml-auto'>
-                                Member <ChevronDownIcon className='ml-2 h-4 w-4 text-muted-foreground' />
+                                Member <ChevronDownIcon className='ml-2 size-4 text-muted-foreground' />
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent className='p-0' align='end'>

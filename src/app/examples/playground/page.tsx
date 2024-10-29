@@ -84,7 +84,7 @@ export default function PlaygroundPage() {
                                                 xmlns='http://www.w3.org/2000/svg'
                                                 viewBox='0 0 20 20'
                                                 fill='none'
-                                                className='h-5 w-5'>
+                                                className='size-5'>
                                                 <rect
                                                     x='4'
                                                     y='3'
@@ -142,7 +142,7 @@ export default function PlaygroundPage() {
                                                 xmlns='http://www.w3.org/2000/svg'
                                                 viewBox='0 0 20 20'
                                                 fill='none'
-                                                className='h-5 w-5'>
+                                                className='size-5'>
                                                 <path
                                                     fillRule='evenodd'
                                                     clipRule='evenodd'
@@ -177,7 +177,7 @@ export default function PlaygroundPage() {
                                                 xmlns='http://www.w3.org/2000/svg'
                                                 viewBox='0 0 20 20'
                                                 fill='none'
-                                                className='h-5 w-5'>
+                                                className='size-5'>
                                                 <rect
                                                     x='4'
                                                     y='3'
@@ -236,7 +236,7 @@ export default function PlaygroundPage() {
                                             <Button>Submit</Button>
                                             <Button variant='secondary'>
                                                 <span className='sr-only'>Show history</span>
-                                                <CounterClockwiseClockIcon className='h-4 w-4' />
+                                                <CounterClockwiseClockIcon className='size-4' />
                                             </Button>
                                         </div>
                                     </div>
@@ -254,7 +254,7 @@ export default function PlaygroundPage() {
                                             <Button>Submit</Button>
                                             <Button variant='secondary'>
                                                 <span className='sr-only'>Show history</span>
-                                                <CounterClockwiseClockIcon className='h-4 w-4' />
+                                                <CounterClockwiseClockIcon className='size-4' />
                                             </Button>
                                         </div>
                                     </div>
@@ -282,7 +282,7 @@ export default function PlaygroundPage() {
                                             <Button>Submit</Button>
                                             <Button variant='secondary'>
                                                 <span className='sr-only'>Show history</span>
-                                                <CounterClockwiseClockIcon className='h-4 w-4' />
+                                                <CounterClockwiseClockIcon className='size-4' />
                                             </Button>
                                         </div>
                                     </div>

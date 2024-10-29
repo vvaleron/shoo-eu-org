@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Announcement } from '@/components/announcement';
 import { ExamplesNav } from '@/components/examples-nav';
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from '@/components/page-header';
-import { cn } from '@/lib/utils';
 import { Button, buttonVariants } from '@/registry/new-york/ui/button';
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ interface ExamplesLayoutProps {
 
 export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
     return (
-        <div className='container relative'>
+        <div className='container relative mx-auto mb-12'>
             <PageHeader>
                 <Announcement />
                 <PageHeaderHeading className='hidden md:block'>Check out some examples</PageHeaderHeading>
@@ -38,7 +37,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
             </PageHeader>
             <section>
                 <ExamplesNav />
-                <div className='overflow-hidden rounded-[0.5rem] border bg-background shadow'>{children}</div>
+                <div className='bg-background overflow-hidden rounded-[0.5rem] border shadow'>{children}</div>
             </section>
         </div>
     );

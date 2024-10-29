@@ -49,25 +49,25 @@ export function BlockToolbar({
                                 resizablePanelRef.current.resize(parseInt(value));
                             }
                         }}>
-                        <ToggleGroupItem value='100' className='h-[22px] w-[22px] rounded-sm p-0' title='Desktop'>
-                            <Monitor className='h-3.5 w-3.5' />
+                        <ToggleGroupItem value='100' className='size-[22px] rounded-sm p-0' title='Desktop'>
+                            <Monitor className='size-3.5' />
                         </ToggleGroupItem>
-                        <ToggleGroupItem value='60' className='h-[22px] w-[22px] rounded-sm p-0' title='Tablet'>
-                            <Tablet className='h-3.5 w-3.5' />
+                        <ToggleGroupItem value='60' className='size-[22px] rounded-sm p-0' title='Tablet'>
+                            <Tablet className='size-3.5' />
                         </ToggleGroupItem>
-                        <ToggleGroupItem value='30' className='h-[22px] w-[22px] rounded-sm p-0' title='Mobile'>
-                            <Smartphone className='h-3.5 w-3.5' />
+                        <ToggleGroupItem value='30' className='size-[22px] rounded-sm p-0' title='Mobile'>
+                            <Smartphone className='size-3.5' />
                         </ToggleGroupItem>
                         <Separator orientation='vertical' className='h-4' />
                         <Button
                             size='icon'
                             variant='ghost'
-                            className='h-[22px] w-[22px] rounded-sm p-0'
+                            className='size-[22px] rounded-sm p-0'
                             asChild
                             title='Open in New Tab'>
                             <Link href={`/blocks/${block.style}/${block.name}`} target='_blank'>
                                 <span className='sr-only'>Open in New Tab</span>
-                                <Fullscreen className='h-3.5 w-3.5' />
+                                <Fullscreen className='size-3.5' />
                             </Link>
                         </Button>
                     </ToggleGroup>

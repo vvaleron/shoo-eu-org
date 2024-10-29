@@ -52,7 +52,7 @@ export function ModelSelector({ models, types, ...props }: ModelSelectorProps) {
                         aria-label='Select a model'
                         className='w-full justify-between'>
                         {selectedModel ? selectedModel.name : 'Select a model...'}
-                        <CaretSortIcon className='ml-2 h-4 w-4 shrink-0 opacity-50' />
+                        <CaretSortIcon className='ml-2 size-4 shrink-0 opacity-50' />
                     </Button>
                 </PopoverTrigger>
                 <PopoverContent align='end' className='w-[250px] p-0'>

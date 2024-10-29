@@ -97,7 +97,7 @@ export function ThemeCustomizer() {
                                                     className={cn(
                                                         'flex h-5 w-5 items-center justify-center rounded-full bg-[--theme-primary]'
                                                     )}>
-                                                    {isActive && <CheckIcon className='h-4 w-4 text-white' />}
+                                                    {isActive && <CheckIcon className='size-4 text-white' />}
                                                 </span>
                                                 <span className='sr-only'>{baseColor.label}</span>
                                             </button>
@@ -113,11 +113,11 @@ export function ThemeCustomizer() {
                         </>
                     ) : (
                         <div className='mr-1 flex items-center gap-4'>
-                            <Skeleton className='h-5 w-5 rounded-full' />
-                            <Skeleton className='h-5 w-5 rounded-full' />
-                            <Skeleton className='h-5 w-5 rounded-full' />
-                            <Skeleton className='h-5 w-5 rounded-full' />
-                            <Skeleton className='h-5 w-5 rounded-full' />
+                            <Skeleton className='size-5 rounded-full' />
+                            <Skeleton className='size-5 rounded-full' />
+                            <Skeleton className='size-5 rounded-full' />
+                            <Skeleton className='size-5 rounded-full' />
+                            <Skeleton className='size-5 rounded-full' />
                         </div>
                     )}
                 </div>
@@ -164,7 +164,7 @@ function Customizer() {
                         <Label className='text-xs'>Style</Label>
                         <Popover>
                             <PopoverTrigger>
-                                <InfoCircledIcon className='ml-1 h-3 w-3' />
+                                <InfoCircledIcon className='ml-1 size-3' />
                                 <span className='sr-only'>About styles</span>
                             </PopoverTrigger>
                             <PopoverContent
@@ -233,7 +233,7 @@ function Customizer() {
                                         className={cn(
                                             'mr-1 flex h-5 w-5 shrink-0 -translate-x-1 items-center justify-center rounded-full bg-[--theme-primary]'
                                         )}>
-                                        {isActive && <CheckIcon className='h-4 w-4 text-white' />}
+                                        {isActive && <CheckIcon className='size-4 text-white' />}
                                     </span>
                                     {theme.label}
                                 </Button>
@@ -327,7 +327,7 @@ function CopyCodeButton({ className, ...props }: React.ComponentProps<typeof But
                     }}
                     className={cn('md:hidden', className)}
                     {...props}>
-                    {hasCopied ? <CheckIcon className='mr-2 h-4 w-4' /> : <CopyIcon className='mr-2 h-4 w-4' />}
+                    {hasCopied ? <CheckIcon className='mr-2 size-4' /> : <CopyIcon className='mr-2 size-4' />}
                     Copy code
                 </Button>
             )}
@@ -359,9 +359,9 @@ function CopyCodeButton({ className, ...props }: React.ComponentProps<typeof But
                                 }}
                                 className='absolute right-4 top-4 bg-muted text-muted-foreground hover:bg-muted hover:text-muted-foreground'>
                                 {hasCopied ? (
-                                    <CheckIcon className='mr-2 h-4 w-4' />
+                                    <CheckIcon className='mr-2 size-4' />
                                 ) : (
-                                    <CopyIcon className='mr-2 h-4 w-4' />
+                                    <CopyIcon className='mr-2 size-4' />
                                 )}
                                 Copy
                             </Button>

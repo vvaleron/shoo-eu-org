@@ -33,8 +33,8 @@ export function ThemesSwitcher({ themes = THEMES, className }: React.ComponentPr
                 {themes.map((theme) => (
                     <div
                         key={theme.id}
-                        className='flex h-10 w-10 items-center justify-center rounded-lg border-2 border-transparent'>
-                        <Skeleton className='h-6 w-6 rounded-sm' />
+                        className='flex size-10 items-center justify-center rounded-lg border-2 border-transparent'>
+                        <Skeleton className='size-6 rounded-sm' />
                     </div>
                 ))}
             </div>
@@ -80,16 +80,16 @@ export function ThemesSwitcher({ themes = THEMES, className }: React.ComponentPr
                                         '--color-4': 'hsl(var(--chart-4))'
                                     } as React.CSSProperties
                                 }>
-                                <div className='h-6 w-6 overflow-hidden rounded-sm'>
+                                <div className='size-6 overflow-hidden rounded-sm'>
                                     <div
                                         className={cn(
                                             'grid h-12 w-12 -translate-x-1/4 -translate-y-1/4 grid-cols-2 overflow-hidden rounded-md transition-all ease-in-out group-hover:rotate-45',
                                             isActive ? 'rotate-45 group-hover:rotate-0' : 'rotate-0'
                                         )}>
-                                        <span className='flex h-6 w-6 bg-[--color-1]' />
-                                        <span className='flex h-6 w-6 bg-[--color-2]' />
-                                        <span className='flex h-6 w-6 bg-[--color-3]' />
-                                        <span className='flex h-6 w-6 bg-[--color-4]' />
+                                        <span className='flex size-6 bg-[--color-1]' />
+                                        <span className='flex size-6 bg-[--color-2]' />
+                                        <span className='flex size-6 bg-[--color-3]' />
+                                        <span className='flex size-6 bg-[--color-4]' />
                                         <span className='sr-only'>{theme.name}</span>
                                     </div>
                                 </div>

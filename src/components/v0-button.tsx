@@ -102,10 +102,10 @@ function Form({
                 disabled={disabled || pending}
                 {...props}>
                 {size === 'icon' ? (
-                    <>{pending ? <Loader2 className='h-3.5 w-3.5 animate-spin' /> : <V0Logo className='h-4 w-4' />}</>
+                    <>{pending ? <Loader2 className='size-3.5 animate-spin' /> : <V0Logo className='size-4' />}</>
                 ) : (
                     <>
-                        {pending && <Loader2 className='h-3.5 w-3.5 animate-spin' />}
+                        {pending && <Loader2 className='size-3.5 animate-spin' />}
                         Open in <V0Logo />
                     </>
                 )}

@@ -349,7 +349,7 @@ export default function Page() {
                 </header>
                 <div className='flex flex-1 flex-col gap-4 p-4'>
                     <div className='mx-auto h-24 w-full max-w-3xl rounded-xl bg-muted/50' />
-                    <div className='mx-auto h-[100vh] w-full max-w-3xl rounded-xl bg-muted/50' />
+                    <div className='mx-auto h-screen w-full max-w-3xl rounded-xl bg-muted/50' />
                 </div>
             </SidebarInset>
             <SidebarRight />
@@ -602,7 +602,7 @@ function NavUser({
                         <SidebarMenuButton
                             size='lg'
                             className='data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground'>
-                            <Avatar className='h-8 w-8 rounded-lg'>
+                            <Avatar className='size-8 rounded-lg'>
                                 <AvatarImage src={user.avatar} alt={user.name} />
                                 <AvatarFallback className='rounded-lg'>CN</AvatarFallback>
                             </Avatar>
@@ -620,7 +620,7 @@ function NavUser({
                         sideOffset={4}>
                         <DropdownMenuLabel className='p-0 font-normal'>
                             <div className='flex items-center gap-2 px-1 py-1.5 text-left text-sm'>
-                                <Avatar className='h-8 w-8 rounded-lg'>
+                                <Avatar className='size-8 rounded-lg'>
                                     <AvatarImage src={user.avatar} alt={user.name} />
                                     <AvatarFallback className='rounded-lg'>CN</AvatarFallback>
                                 </Avatar>

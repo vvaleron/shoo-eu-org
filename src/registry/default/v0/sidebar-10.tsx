@@ -393,7 +393,7 @@ export default function Page() {
                 </header>
                 <div className='flex flex-1 flex-col gap-4 px-4 py-10'>
                     <div className='mx-auto h-24 w-full max-w-3xl rounded-xl bg-muted/50' />
-                    <div className='mx-auto h-full w-full max-w-3xl rounded-xl bg-muted/50' />
+                    <div className='mx-auto size-full max-w-3xl rounded-xl bg-muted/50' />
                 </div>
             </SidebarInset>
         </SidebarProvider>
@@ -434,12 +434,12 @@ function NavActions({
     return (
         <div className='flex items-center gap-2 text-sm'>
             <div className='hidden font-medium text-muted-foreground md:inline-block'>Edit Oct 08</div>
-            <Button variant='ghost' size='icon' className='h-7 w-7'>
+            <Button variant='ghost' size='icon' className='size-7'>
                 <Star />
             </Button>
             <Popover open={isOpen} onOpenChange={setIsOpen}>
                 <PopoverTrigger asChild>
-                    <Button variant='ghost' size='icon' className='h-7 w-7 data-[state=open]:bg-accent'>
+                    <Button variant='ghost' size='icon' className='size-7 data-[state=open]:bg-accent'>
                         <MoreHorizontal />
                     </Button>
                 </PopoverTrigger>
