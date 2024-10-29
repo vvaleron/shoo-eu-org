@@ -10,8 +10,17 @@ Welcome to the **Next.js 15 Starter** repository! This starter template is built
 
 ## 🚀 What's Included
 
-- [**All in Next.js 15 Starter Core**](https://github.com/SiddharthaMaity/nextjs-15-starter-core)
-- [**Tailwind CSS**](https://tailwindcss.com/)
+- **Next.js 15 (Stable)**
+- **React 19 (RC)**
+- **TypeScript 5**
+- **ESLint 9**
+- **Prettier 3**
+- **Tailwind CSS 3**
+- **Shadcn UI**
+- **App Directory**
+- **System, Light & Dark Mode**
+- **Next.js Bundle Analyzer**
+- **Dockerfile** with Node.js 20.18.0 (Alpine)
 
 ### 🛠️ ESLint Plugins
 
@@ -64,6 +73,10 @@ To enhance development experience, install the following VS Code extensions:
     ```bash
     git clone https://github.com/yourusername/nextjs-15-starter-shadcn.git
     cd nextjs-15-starter-shadcn
+    ```
+    To get the code without example change branch to without-example
+    ```bash
+    git checkout origin/without-example
     ```
 
 2. **Install Dependencies**:
