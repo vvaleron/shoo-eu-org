@@ -138,8 +138,8 @@ export default function Component() {
                 <div className='flex'>
                     {['desktop', 'mobile'].map((key) => {
                         const chart = key as keyof typeof chartConfig;
-                        
-return (
+
+                        return (
                             <button
                                 key={chart}
                                 data-active={activeChart === chart}
@@ -172,8 +172,8 @@ return (
                             minTickGap={32}
                             tickFormatter={(value) => {
                                 const date = new Date(value);
-                                
-return date.toLocaleDateString('en-US', {
+
+                                return date.toLocaleDateString('en-US', {
                                     month: 'short',
                                     day: 'numeric'
                                 });

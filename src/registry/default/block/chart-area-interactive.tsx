@@ -138,8 +138,8 @@ export default function Component() {
             daysToSubtract = 7;
         }
         now.setDate(now.getDate() - daysToSubtract);
-        
-return date >= now;
+
+        return date >= now;
     });
 
     return (
@@ -188,8 +188,8 @@ return date >= now;
                             minTickGap={32}
                             tickFormatter={(value) => {
                                 const date = new Date(value);
-                                
-return date.toLocaleDateString('en-US', {
+
+                                return date.toLocaleDateString('en-US', {
                                     month: 'short',
                                     day: 'numeric'
                                 });

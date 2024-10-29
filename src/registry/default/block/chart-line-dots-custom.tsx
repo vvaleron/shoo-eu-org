@@ -60,8 +60,8 @@ export default function Component() {
                             strokeWidth={2}
                             dot={({ cx, cy, payload }) => {
                                 const r = 24;
-                                
-return (
+
+                                return (
                                     <GitCommitVertical
                                         key={payload.month}
                                         x={cx - r / 2}

@@ -9,7 +9,7 @@ export default function InputOTPControlled() {
 
     return (
         <div className='space-y-2'>
-            <InputOTP maxLength={6} value={value} onChange={(value) => setValue(value)}>
+            <InputOTP maxLength={6} value={value} onChange={(value: React.SetStateAction<string>) => setValue(value)}>
                 <InputOTPGroup>
                     <InputOTPSlot index={0} />
                     <InputOTPSlot index={1} />

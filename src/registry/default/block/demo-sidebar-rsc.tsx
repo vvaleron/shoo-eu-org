@@ -51,8 +51,8 @@ const projects = [
 // Dummy fetch function
 async function fetchProjects() {
     await new Promise((resolve) => setTimeout(resolve, 3000));
-    
-return projects;
+
+    return projects;
 }
 
 export default function AppSidebar() {
