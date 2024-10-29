@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ExtensionDetails from '@/app/(delete-this-and-modify-page.tsx)/ExtensionDetails';
-import SetupDetails from '@/app/(delete-this-and-modify-page.tsx)/SetupDetails';
+import InfoAccordion from '@/app/(delete-this-and-modify-page.tsx)/InfoAccordion';
 import ThemeSwitch from '@/app/(delete-this-and-modify-page.tsx)/ThemeSwitch';
 
 const HomePage: React.FC = () => {
@@ -100,7 +99,21 @@ const HomePage: React.FC = () => {
             </div>
             <div className='space-y-6'>
                 <h2 className='text-center text-lg'>Whats included?</h2>
-                <SetupDetails />
+                <div className='flex justify-center gap-2'>
+                    <Link
+                        className='text-lg font-medium text-blue-500'
+                        href='https://github.com/SiddharthaMaity/nextjs-15-starter-core'
+                        target='_blank'>
+                        Next.js 15 Starter Core ↗
+                    </Link>
+                    <span className='text-xl'>+</span>
+                    <Link className='text-lg font-medium text-blue-500' href='https://ui.shadcn.com/' target='_blank'>
+                        Shadcn UI ↗
+                    </Link>
+                </div>
+            </div>
+            <div className='mx-auto w-full max-w-lg'>
+                <InfoAccordion />
             </div>
         </main>
     );
