@@ -102,10 +102,6 @@ const HomePage: React.FC = () => {
                 <h2 className='text-center text-lg'>Whats included?</h2>
                 <SetupDetails />
             </div>
-            {/* <div className='space-y-6'>
-                <h2 className='text-center text-lg'>VS Code Extensions</h2>
-                <ExtensionDetails />
-            </div> */}
         </main>
     );
 };
