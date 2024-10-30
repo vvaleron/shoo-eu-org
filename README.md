@@ -78,7 +78,7 @@ To enhance development experience, install the following VS Code extensions:
     ```
     To get the code without example change branch to without-example
     ```bash
-    git checkout origin/without-example
+    git checkout without-example
     ```
 
 2. **Install Dependencies**:
